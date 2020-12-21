@@ -1,0 +1,27 @@
+{
+  "printWidth": 80,
+"proseWrap": "always",
+"singleQuote": true,
+"semi": true,
+"bracketSpacing": true,
+"parser": "babylon",
+"trailingComma": "none",
+"overrides": [
+    {
+      "files": ["*.js", "*.tsx"],
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": ["*.json"],
+      "options": {"parser":"json", "printWidth": 80}
+      
+    },
+    {
+      "files":"*.css",
+      "options": {"parser":"css"}
+    }
+    
+  ]
+}
